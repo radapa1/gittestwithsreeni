@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore ${{github.workspace}}/gittestwithsreeni/gittestsreeniproj.csproj
+      run: dotnet restore ${{github.workspace}}/gittestsreeniproj/gittestsreeniproj.csproj
     - name: Build
-      run: dotnet build ${{github.workspace}}/gittestwithsreeni/gittestsreeniproj.csproj --no-restore
+      run: dotnet build ${{github.workspace}}/gittestsreeniproj/gittestsreeniproj.csproj --no-restore
     - name: Test
-      run: dotnet test ${{github.workspace}}/gittestwithsreeni/gittestsreeniproj.csproj --no-build --verbosity normal
+      run: dotnet test ${{github.workspace}}/gittestsreeniproj/gittestsreeniproj.csproj --no-build --verbosity normal
